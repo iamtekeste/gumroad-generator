@@ -26,7 +26,7 @@ DisplayStyleChooser.attachTo('#display-style-chooser');
 const ButtonTextInput = flight.component(function() {
   this.after('initialize', function() {
     this.on(document, 'displayStyleSelected', (event, data) => {
-      if (data.selectedDisplayStyle === 'button') {
+      if (data.selectedDisplayStyle === 'overlay') {
         this.$node.show();
       } else {
         this.$node.hide();
@@ -45,7 +45,7 @@ const WidgetCodeSnippet = flight.component(function() {
   this.snippetData = {
     productLink: '',
     buttonText: 'Buy my product',
-    displayStyle: 'button'
+    displayStyle: 'overlay'
   };
   this.generateCodeSnippet = function() {
     if (!this.snippetData.productLink) {
@@ -54,7 +54,7 @@ const WidgetCodeSnippet = flight.component(function() {
     }
     let buttonText = 'Loading';
     let buttonClassName = '';
-    if (this.snippetData.displayStyle === 'button') {
+    if (this.snippetData.displayStyle === 'overlay') {
       buttonText = this.snippetData.buttonText;
       buttonClassName = 'gumroad-button';
     }
