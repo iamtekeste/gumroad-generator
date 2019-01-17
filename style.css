@@ -1,0 +1,55 @@
+body,
+html {
+  background: #494fec;
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.component {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+input[type='text'],
+textarea {
+  width: 300px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type='radio'] {
+  margin: 0 30px 0px 10px;
+}
+
+textarea {
+  width: 700px;
+  height: 100px;
+}
+
+#preview {
+  display: none;
+}
+
+a {
+  color: #fff;
+}
+
+.preview-wrapper {
+  margin-top: 20px;
+}
